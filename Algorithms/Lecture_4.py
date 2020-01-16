@@ -75,9 +75,10 @@ build_house(window, gr.Point(100, 100), 100)
 print('Yapi! The house is build!')
 
 # Алгоритмы
-# Метод грубой силы
+# Метод грубой силы (Bruteforse)
 def is_simple_number(x):
-    ''' Определяет, является ли число простым.
+    '''
+    Определяет, является ли число простым.
     Если простое, то возвращает True, иначе -  False
     :param x: int>0
     :return: bool
@@ -88,7 +89,7 @@ def is_simple_number(x):
         if x % divisor == 0:
             return False
         divisor += 1
-        return True
+    return True
 
 print(is_simple_number(random.randint(1, 100)))
 
